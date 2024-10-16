@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Zen+Kaku+Gothic+New&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo">
+			<h1>PORTFOLIO</h1>
+			<p class="digest">my work</p>
+		</div><!-- /.logo -->
+		<p id="top" class="main_image"><img src="img/main.jpg" alt="メインビジュアル"></p>
+
+	</header>
+
+	<div id="burger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<nav class="nav">
+		<ul class="g-nav">
+			<li><a href="#top">TOP</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#coding">CODING</a></li>
+			<li><a href="#banner">BANNER</a></li>
+			<li><a href="#pattern">PATTERN</PATTERN></a></li>
+			<li><a href="#program">PROGRAM</a></li>
+		</ul>
+	</nav>
+
+	<main class="main">
+		<div class="main container">
+			<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+				<path fill="#ffffff" fill-opacity="1"
+					d="M0,64L60,80C120,96,240,128,360,133.3C480,139,600,117,720,128C840,139,960,181,1080,192C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+				</path>
+			</svg>
+			<div class="box about">
+				<h2 id="about">- About -</h2>
+				<div class="profile">
+					<div class="profile_img">
+						<p class="me"><img src="img/profile.jpg" alt="プロフィール画像"></p>
+					</div><!-- /.profile_img -->
+					<div class="profile_txt">
+						<p class="aboutme"><span>Naho Higuchi</span> <br><br>
+							短大卒業後、8年間幼稚園教諭として働いてきました。
+							<br>
+							自分も人の心を動かせるようなwebサイトを作成したいと思い、
+							現在は職業訓練校にて、web制作について学んでいます。
+						</p>
+						<p class="more"><a href="about/aboutme.html" target="_blank">more →</a></p>
+					</div><!-- /.profile_txt -->
+				</div><!-- /.profile -->
+			</div><!-- /.box about -->
+
+			<div class="box coding">
+				<h2 id="coding">- Coding -</h2>
+				<ul>
+					<li>
+						<div class="thum">
+							<a href="connect/connect7.html" target="_blank"><img src="img/thum7.jpg" alt="サムネイル画像7"></a>
+						</div><!-- /.thum -->
+						<h3>Wedding Party</h3>
+						<p>■結婚式のお知らせサイト <br>flex-box , responsive , jQuery</p>
+					</li>
+
+					<li>
+						<div class="thum">
+							<a href="connect/connect6.html" target="_blank"><img src="img/thum6.jpg" alt="サムネイル画像6"></a>
+						</div><!-- /.thum -->
+						<h3>The Raw</h3>
+						<p>■インテリアショップサイト<br>flex-box , responsive , grid layout , jQuery</p>
+					</li>
+
+					<li>
+						<div class="thum">
+							<a href="connect/connect5.html" target="_blank"><img src="img/thum5.jpg" alt="サムネイル画像5"></a>
+						</div><!-- /.thum -->
+						<h3>Web Design Office</h3>
+						<p>■デザインオフィスサイト<br>flex-box , responsive , jQuery</p>
+					</li>
+
+					<li>
+						<div class="thum">
+							<a href="connect/connect4.html" target="_blank"><img src="img/thum4.jpg" alt="サムネイル画像4"></a>
+						</div><!-- /.thum -->
+						<h3>PHOTO BOOK</h3>
+						<p>■写真集出版お知らせのサイト<br>flex-box , responsive</p>
+					</li>
+
+
+					<li>
+						<div class="thum">
+							<a href="connect/connect3.html" target="_blank"><img src="img/thum3.jpg" alt="サムネイル画像3"></a>
+						</div><!-- /.thum -->
+						<h3>Recipe Diary</h3>
+						<p>■レシピサイト<br>flex-box , responsive</p>
+					</li>
+
+					<li>
+						<div class="thum">
+							<a href="connect/connect2.html" target="_blank"><img src="img/thum2.jpg" alt="サムネイル画像2"></a>
+						</div><!-- /.thum -->
+						<h3>Profile</h3>
+						<p>■自転車紹介サイト<br>flex-box , responsive</p>
+					</li>
+
+					<!-- <li>
+						<a href="/connect/connect1.html" target="_blank"><img src="img/thum1.jpg" alt="サムネイル画像1"></a>
+						<h3>日本の四季</h3>
+						<p>■四季の説明サイト<br>flex-box</p>
+					</li> -->
+				</ul>
+			</div><!-- /.box coding -->
+
+			<div class="box image">
+				<h2 id="banner">- Banner -</h2>
+				<ul>
+					<li>
+						<div class="item banner">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/sale_gw.jpg" data-lightbox="banner" data-title="banner01"><img
+											src="banner_image/sale_gw.jpg" alt="バナー画像1"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner1</h3>
+								<p>1080x1080 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item banner">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/campaign.jpg" data-lightbox="banner" data-title="banner02"><img
+											src="banner_image/campaign.jpg" alt="バナー画像2"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner2</h3>
+								<p>750x700 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item banner">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/kiss.jpg" data-lightbox="banner" data-title="banner03"><img
+											src="banner_image/kiss.jpg" alt="バナー画像3"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner3</h3>
+								<p>800x800 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item banner">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/sale_by.jpg" data-lightbox="banner" data-title="banner04"><img
+											src="banner_image/sale_by.jpg" alt="バナー画像4"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner4</h3>
+								<p>720x900 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item banner">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/christmas2.jpg" data-lightbox="banner" data-title="banner05"><img
+											src="banner_image/christmas2.jpg" alt="バナー画像5"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner5</h3>
+								<p>600x500 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item banner">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/baby.jpg" data-lightbox="banner" data-title="banner06"><img
+											src="banner_image/baby.jpg" alt="バナー画像6"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner6</h3>
+								<p>750x750 | Photoshop</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/time_sale.jpg" data-lightbox="banner" data-title="banner09"><img
+											src="banner_image/time_sale.jpg" alt="バナー画像7"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner7</h3>
+								<p>2959x1971 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/sale_10_2.jpg" data-lightbox="banner" data-title="banner08"><img
+											src="banner_image/sale_10_2.jpg" alt="バナー画像8"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner8</h3>
+								<p>900x600 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="banner_image/sale_10_3.jpg" data-lightbox="banner" data-title="banner09"><img
+											src="banner_image/sale_10_3.jpg" alt="バナー画像9"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>banner9</h3>
+								<p>900x600 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+				</ul>
+			</div><!-- /.box image -->
+
+			<div class="box image">
+				<h2 id="pattern">- Pattern -</h2>
+				<ul>
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="pattern_image/ttn.jpg" data-lightbox="pattern" data-title="pattern01"><img
+											src="pattern_image/ttn.jpg" alt="パターン画像1"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>pattern01</h3>
+								<p>タータンチェック | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="pattern_image/arg.jpg" data-lightbox="pattern" data-title="pattern02"><img
+											src="pattern_image/arg.jpg" alt="パターン画像2"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>pattern02</h3>
+								<p>アーガイルチェック | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="pattern_image/sen.jpg" data-lightbox="pattern" data-title="pattern03"><img
+											src="pattern_image/sen.jpg" alt="パターン画像3"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>pattern03</h3>
+								<p>千鳥格子 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="pattern_image/seven.jpg" data-lightbox="pattern" data-title="pattern04"><img
+											src="pattern_image/seven.jpg" alt="パターン画像4"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>pattern04</h3>
+								<p>七宝 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="pattern_image/asa.jpg" data-lightbox="pattern" data-title="pattern05"><img
+											src="pattern_image/asa.jpg" alt="パターン画像5"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>pattern05</h3>
+								<p>麻の葉 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+					<li>
+						<div class="item">
+							<div class="thum">
+								<p class="photo"><a href="pattern_image/ya.jpg" data-lightbox="pattern" data-title="pattern06"><img
+											src="pattern_image/ya.jpg" alt="パターン画像6"></a></p>
+							</div><!-- /.thum -->
+							<div class="txt">
+								<h3>pattern06</h3>
+								<p>矢絣 | Illustrator</p>
+							</div><!-- /.txt -->
+						</div><!-- /.item -->
+					</li>
+
+				</ul>
+
+			</div><!-- /.box image -->
+
+			<div class="box program">
+				<h2 id="program">- Program -</h2>
+				<ul>
+					<li>
+						<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzdMoJe"
+							data-user="yeagxijl-the-sans"
+							style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+							<span>See the Pen <a href="https://codepen.io/yeagxijl-the-sans/pen/YzdMoJe">
+									Untitled</a> by pippi (<a href="https://codepen.io/yeagxijl-the-sans">@yeagxijl-the-sans</a>)
+								on <a href="https://codepen.io">CodePen</a>.</span>
+						</p>
+						<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+					</li>
+					<li>
+						<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYbowxZ"
+							data-user="yeagxijl-the-sans"
+							style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+							<span>See the Pen <a href="https://codepen.io/yeagxijl-the-sans/pen/eYbowxZ">
+									Untitled</a> by pippi (<a href="https://codepen.io/yeagxijl-the-sans">@yeagxijl-the-sans</a>)
+								on <a href="https://codepen.io">CodePen</a>.</span>
+						</p>
+						<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+					</li>
+				</ul>
+			</div><!-- /.box program -->
+
+		</div><!-- /.main container -->
+	</main>
+
+	<footer class="footer">
+		<p><small>&copy; 2023 PORTFOLIO</small></p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script>
+		$(function () {
+
+			lightbox.option({
+				'fadeDuration': 200,
+				'wrapAround': true
+			})
+
+
+			$('#burger').on('click', function () {
+				$(this).toggleClass('active');
+				$('nav').fadeToggle();
+			});
+
+			$('nav a').on('click', function () {
+				$('#burger').toggleClass('active');
+				$('nav').fadeToggle();
+			})
+
+		});
+
+	</script>
+
+</body>
+
+</html>
