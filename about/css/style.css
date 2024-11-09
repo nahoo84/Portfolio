@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+/* -----------------------------------
+  reset setting
+--------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    letter-spacing: 0.05em;
+    background-color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+:root {
+    --color1: #dd6738;
+    --color2: #ffffff;
+}
+
+/* -----------------------------------
+  container setting
+--------------------------------------*/
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* background-color: var(--color2); */
+}
+
+/* -----------------------------------
+  about setting
+--------------------------------------*/
+
+.item {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.sub_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.profile .profile_img {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.profile .txt {
+    line-height: 1.65;
+    width: 50%;
+    text-align: center;
+}
+
+.profile .txt span {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* -----------------------------------
+  skill setting
+--------------------------------------*/
+
+.box {
+    width: 90%;
+    position: relative;
+    top: 0;
+    left: 5%;
+    background: #e6e4bb;
+    box-shadow: 0px 0px 0px 5px #e6e4bb;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    margin-bottom: 50px;
+}
+
+.box::after {
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #ffdb88 #fff #c5b081;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.box p {
+    margin: 0;
+    padding: 0;
+}
+
+.box dl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box dl dt {
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+    padding: 20px 5px;
+    line-height: 1.65;
+}
+
+.box dl dd {
+    width: 60%;
+    padding: 20px 10px;
+    
+    line-height: 1.65;
+}
+
+/* -----------------------------------
+  fav setting
+--------------------------------------*/
+
+.fav {
+    margin-bottom: 50px;
+}
+
+.fav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fav li img {
+    margin-bottom: 8px;
+    height: 64px;
+}
+
+.fav li {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* -----------------------------------
+  close btn setting
+--------------------------------------*/
+
+.close_btn {
+    text-align: center;
+}
+
+.close a {
+    display: inline-block;
+    padding: 10px 30px 12px;
+    margin-bottom: 80px;
+    background-color: var(--color1);
+    color: #fff;
+    border: 2px solid var(--color1);
+    &:hover{
+        background-color: #fff;
+        color: #555;
+    }
+}
+
+/* -----------------------------------
+    footer setting
+  --------------------------------------*/
+
+.footer {
+    padding: 30px 0 50px;
+    text-align: center;
+    background-color: var(--color1);
+    color: #fff;
+}
+
+/* -----------------------------------
+  responsive setting
+--------------------------------------*/
+
+@media (max-width:768px) {
+
+    /* ---- profile ---- */
+
+    .profile {
+        display: block;
+    }
+
+    .profile .profile_img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .profile .txt {
+        line-height: 1.65;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}

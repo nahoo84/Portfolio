@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+/* -----------------------------------
+  reset setting
+--------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  letter-spacing: 0.05em;
+  background-color: var(--color2);
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+:root {
+  --color1: #dd6738;
+  --color2: #ffffff;
+}
+
+/* -----------------------------------
+  header setting
+--------------------------------------*/
+
+.header .logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #f9cb93a4;
+  z-index: 1;
+}
+
+.header .logo h1 {
+  padding: 0 0 5px 20px;
+  font-size: 24px;
+}
+
+.header .logo .digest {
+  padding-left: 52px;
+  margin-bottom: 5px;
+}
+
+.header .main_image {
+  height: 100vh;
+}
+
+.header .main_image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: bottom center;
+}
+
+/* -----------------------------------
+  nav setting
+--------------------------------------*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: var(--color1);
+  display: none;
+  z-index: 2;
+}
+
+nav li{
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  &:hover{
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    
+  }
+}
+
+/* -----------------------------------
+  burger menu setting
+--------------------------------------*/
+
+#burger {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  cursor: pointer;
+  background-color: var(--color1);
+  z-index: 3;
+}
+
+#burger span {
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 20px;
+  inset: 0;
+  margin: auto;
+  transition: .3s;
+
+}
+
+#burger span:nth-child(1) {
+  top: -30%;
+}
+
+#burger span:nth-child(3) {
+  top: 30%;
+}
+
+#burger.active span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: -20%;
+}
+
+#burger.active span:nth-child(2) {
+  display: none;
+}
+
+#burger.active span:nth-child(3) {
+  transform: rotate(45deg);
+  top: -20%;
+}
+
+/* -----------------------------------
+  container setting
+--------------------------------------*/
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: var(--color2);
+}
+
+/* -----------------------------------
+  main setting
+--------------------------------------*/
+
+.main {
+  padding: 0 10px;
+
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+.box>h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.main li p {
+  line-height: 1.5;
+}
+
+/* ---- about ---- */
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  position: relative;
+  padding-top: 60px;
+}
+
+.wave {
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  width: 100%;
+  height: 40%;
+}
+
+.about .profile_img {
+  width: 40%;
+  text-align: center;
+}
+
+.about .me img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.about .profile_txt {
+  width: 60%;
+  text-align: center;
+}
+
+.about .aboutme {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about .aboutme span {
+  font-size: 24px;
+}
+
+.about .more a {
+  display: inline-block;
+  font-size: 26px;
+  padding: 8px 26px 16px;
+  border: 2px solid var(--color1);
+  background-color: var(--color1);
+  color: #fff;
+  &:hover{
+    background-color: #fff;
+    color: #555;
+  }
+}
+
+/* ---- coding ---- */
+
+.coding ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.coding li {
+  width: 31%;
+  margin-bottom: 30px;
+}
+
+.coding li:last-child {
+  margin-bottom: 0;
+}
+
+.coding img {
+  transition: 0.4s;
+}
+
+.coding li:hover img {
+  scale: 1.07;
+}
+
+.coding li h3 {
+  margin-bottom: 7px;
+}
+
+/* ---- 画像の拡大時はみ出し防止 ---- */
+
+.thum{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+/* ---- image (banner,pattern) ---- */
+
+.item {
+  margin-bottom: 50px;
+}
+
+.item img {
+  transition: 0.4s;
+}
+
+.item:hover img {
+  scale: 1.07;
+
+}
+
+.item h3 {
+  margin-bottom: 7px;
+}
+
+.image ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  place-items: center;
+  gap: 0 10px;
+}
+
+.image .photo {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.image .banner img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ---- program ---- */
+
+.program{
+  margin-bottom: 100px;
+}
+
+.program li {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+/* -----------------------------------
+  footer setting
+--------------------------------------*/
+
+.footer {
+  padding: 30px 0 50px;
+  text-align: center;
+  background-color: var(--color1);
+  color: #fff;
+}
+
+/* -----------------------------------
+  responsive setting
+--------------------------------------*/
+
+@media (max-width:768px) {
+
+  /* ---- header ---- */
+
+  .header .logo{
+    position: absolute;
+  }
+
+  .header .main_image {
+    height: 50vh;
+  }
+
+  .header .main_image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+  }
+
+  /* ---- main_about ---- */
+
+  .profile {
+    display: block;
+  }
+
+  .wave {
+    display: none;
+  }
+  
+
+  .about .profile_img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .me img {
+    margin-bottom: 20px;
+  }
+
+  .about .profile_txt {
+    width: 100%;
+    line-height: 1.6;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* ---- main_coding ---- */
+
+  .coding ul {
+    display: block;
+  }
+
+  .coding li {
+    width: 100%;
+  }
+
+  /* ---- main_image ---- */
+
+
+  .image ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+/* query end */
