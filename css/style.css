@@ -283,7 +283,7 @@ nav a {
   margin-bottom: 15px;
 }
 
-/* ---- image (banner,pattern) ---- */
+/* ---- image (work,banner,pattern) ---- */
 
 .item {
   margin-bottom: 50px;
@@ -313,6 +313,7 @@ nav a {
 .image .photo {
   max-width: 250px;
   max-height: 250px;
+  object-fit: cover;
 }
 
 .image .banner img {
