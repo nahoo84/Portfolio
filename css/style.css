@@ -407,9 +407,14 @@ nav a {
 
   /* ---- main_image ---- */
 
-
   .image ul {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+/* ---- work,banner,pattern ---- */
+
+  .txt {
+    text-align: center;
   }
 
 }
