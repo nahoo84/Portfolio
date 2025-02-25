@@ -177,7 +177,7 @@ nav a {
   margin-bottom: 50px;
 }
 
-.box>h2 {
+.box > h2 {
   font-size: 40px;
   text-align: center;
   padding: 15px;
@@ -260,10 +260,6 @@ nav a {
   margin-bottom: 50px;
 }
 
-.coding li:last-child {
-  margin-bottom: 0;
-}
-
 .coding img {
   transition: 0.4s;
 }
@@ -285,17 +281,12 @@ nav a {
 
 /* ---- image (work,banner,pattern) ---- */
 
-.item {
-  margin-bottom: 50px;
-}
-
 .item img {
   transition: 0.4s;
 }
 
 .item:hover img {
   scale: 1.07;
-
 }
 
 .item h3 {
@@ -308,6 +299,10 @@ nav a {
   place-content: center;
   place-items: center;
   gap: 0 10px;
+}
+
+.image li {
+  margin-bottom: 50px;
 }
 
 .image .photo {
@@ -404,6 +399,10 @@ nav a {
     width: 100%;
     text-align: center;
   }
+
+.coding li:last-child {
+  margin-bottom: 100px;
+}
 
   /* ---- main_image ---- */
 
