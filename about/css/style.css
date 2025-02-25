@@ -54,12 +54,12 @@ img {
 
 .item {
     text-align: center;
-    padding: 30px 0;
+    padding: 15px 0;
 }
 
 .title {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .sub_title {
@@ -71,7 +71,7 @@ img {
 .profile {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .profile .profile_img {
@@ -105,7 +105,7 @@ img {
     box-shadow: 0px 0px 0px 5px #e6e4bb;
     border: dashed 2px white;
     padding: 0.2em 0.5em;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .box::after {
@@ -150,7 +150,7 @@ img {
 --------------------------------------*/
 
 .fav {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .fav ul {
