@@ -223,6 +223,7 @@ nav a {
 .about .profile_txt {
   width: 60%;
   line-height: 1.6;
+  font-size: 14px;
 }
 
 .about .aboutme {
