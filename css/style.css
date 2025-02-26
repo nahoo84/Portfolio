@@ -193,6 +193,7 @@ nav a {
 .profile {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about {
@@ -221,7 +222,7 @@ nav a {
 
 .about .profile_txt {
   width: 60%;
-  text-align: center;
+  line-height: 1.6;
 }
 
 .about .aboutme {
@@ -379,7 +380,7 @@ nav a {
   }
 
   .about .me img {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .about .profile_txt {
